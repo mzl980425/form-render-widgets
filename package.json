@@ -1,6 +1,6 @@
 {
   "name": "form-render-widgets",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "import React, { useState } from &#x27;react&#x27;;",
   "author": "",
   "license": "MIT",
