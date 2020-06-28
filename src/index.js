@@ -1,6 +1,28 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React, { useRef } from 'react'
+import JoditEditor from 'jodit-react'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+const RichTextEditor = ({ onChange, value, name, options, ...rest }) => {
+  const editor = useRef(null)
+
+  const handleSubmit = (value) => {
+    onChange(name, value)
+  }
+
+  const handleChange = (value) => {}
+
+  return (
+    <div style={{ width: '100%' }}>
+      <JoditEditor
+        ref={editor}
+        value={value}
+        config={options}
+        tabIndex={1} // tabIndex of textarea
+        onBlur={handleSubmit}
+        onChange={handleChange}
+        {...rest}
+      />
+    </div>
+  )
 }
+
+export default RichTextEditor
