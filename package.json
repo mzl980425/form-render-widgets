@@ -1,7 +1,7 @@
 {
   "name": "form-render-widgets",
   "version": "1.0.0",
-  "description": "import React, { useState } from &#x27;react&#x27;;",
+  "description": "常用的form-render自定义组件",
   "author": "",
   "license": "MIT",
   "repository": "/form-render-widgets",
