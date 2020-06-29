@@ -2,11 +2,11 @@
   "propsSchema": {
     "type": "object",
     "properties": {
-      "inputName": {
+      "input": {
         "title": "简单输入框",
         "type": "string"
       },
-      "inputName2": {
+      "richEditor": {
         "title": "简单输入框",
         "type": "string",
         "ui:widget": "editor"
@@ -14,5 +14,7 @@
     },
     "required": []
   },
-  "formData": {}
+  "formData": {
+    "richEditor": "<p>hello world!</p>"
+  }
 }
